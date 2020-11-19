@@ -1,0 +1,13 @@
+E:\Programmazione\C#\ColleoniWWF\bin\Debug\ColleoniWWF.exe.config
+E:\Programmazione\C#\ColleoniWWF\bin\Debug\ColleoniWWF.exe
+E:\Programmazione\C#\ColleoniWWF\bin\Debug\ColleoniWWF.pdb
+E:\Programmazione\C#\ColleoniWWF\obj\Debug\ColleoniWWF.csprojAssemblyReference.cache
+E:\Programmazione\C#\ColleoniWWF\obj\Debug\ColleoniWWF.Properties.Resources.resources
+E:\Programmazione\C#\ColleoniWWF\obj\Debug\ColleoniWWF.csproj.GenerateResource.cache
+E:\Programmazione\C#\ColleoniWWF\obj\Debug\ColleoniWWF.csproj.CoreCompileInputs.cache
+E:\Programmazione\C#\ColleoniWWF\obj\Debug\ColleoniWWF.exe
+E:\Programmazione\C#\ColleoniWWF\obj\Debug\ColleoniWWF.pdb
+E:\Programmazione\C#\ColleoniWWF\obj\Debug\ColleoniWWF.Main.resources
+E:\Programmazione\C#\ColleoniWWF\obj\Debug\ColleoniWWF.Read.resources
+E:\Programmazione\C#\ColleoniWWF\obj\Debug\ColleoniWWF.Update.resources
+E:\Programmazione\C#\ColleoniWWF\obj\Debug\ColleoniWWF.Add.resources
