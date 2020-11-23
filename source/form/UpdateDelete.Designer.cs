@@ -42,8 +42,7 @@ namespace ColleoniWWF
             this.dataGridView1.Size = new System.Drawing.Size(614, 377);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            dataGridView1.CellValueChanged -= dataGridView1_CellValueChanged;
-            dataGridView1.CellValueChanged += dataGridView1_CellValueChanged;
+            this.dataGridView1.CellValueChanged += dataGridView1_CellValueChanged;
             // 
             // saveButton
             // 
