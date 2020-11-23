@@ -46,16 +46,15 @@ namespace ColleoniWWF
                 prevButton.Hide();
         }
 
-        private void closeButton_Click(object sender, EventArgs e)
-        {
-            Hide();
-            Main m = new Main();
-            m.Show();
-        }
-
         private void Read_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Read_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Main m = new Main();
+            m.Show();        
         }
     }
 }

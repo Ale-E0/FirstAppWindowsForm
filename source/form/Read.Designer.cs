@@ -32,7 +32,6 @@ namespace ColleoniWWF
             this.prevButton = new System.Windows.Forms.Button();
             this.nextButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.closeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // prevButton
@@ -65,22 +64,11 @@ namespace ColleoniWWF
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             // 
-            // closeButton
-            // 
-            this.closeButton.Location = new System.Drawing.Point(666, 343);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(75, 23);
-            this.closeButton.TabIndex = 3;
-            this.closeButton.Text = "Chiudi";
-            this.closeButton.UseVisualStyleBackColor = true;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
             // Read
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(805, 450);
-            this.Controls.Add(this.closeButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.prevButton);
@@ -88,6 +76,7 @@ namespace ColleoniWWF
             this.MaximizeBox = false;
             this.Name = "Read";
             this.Text = "Read";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Read_FormClosed);
             this.Load += new System.EventHandler(this.Read_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -98,6 +87,5 @@ namespace ColleoniWWF
         private System.Windows.Forms.Button prevButton;
         private System.Windows.Forms.Button nextButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button closeButton;
     }
 }

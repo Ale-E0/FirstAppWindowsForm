@@ -8,7 +8,7 @@ namespace ColleoniWWF
     public partial class Update : Form
     {
         private List<SerieTV> serieTV;
-
+        private bool changed;
         public Update(List<SerieTV> serieTV)
         {
             this.serieTV = serieTV;
@@ -21,11 +21,9 @@ namespace ColleoniWWF
             dataGridView1.Columns.Add("Genere", "Genere");
             dataGridView1.Columns.Add("Paese", "Paese");
             dataGridView1.Columns.Add("Anno", "Anno");
-
-
+            changed = false;
             foreach (SerieTV serie in this.serieTV)
                 dataGridView1.Rows.Add(serie.Titolo, serie.Stagioni, serie.Episodi, serie.Genere, serie.Paese, serie.Anno);
-
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -35,6 +33,42 @@ namespace ColleoniWWF
 
         private void saveButton_Click(object sender, EventArgs e)
         {
+            save();
+        }
+
+        private void Update_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Update_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Main m = new Main();
+            m.Show();
+        }
+
+        private void Update_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (changed)
+            {
+                if (MessageBox.Show("Vuoi salvare?\nNon hai premuto salva, le modifiche non verranno effettuate",
+                    "ColleoniWWF", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    save();
+                }
+            }
+        }
+        private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            changed = true;
+        }
+
+        private void save()
+        {
+            if (changed)
+            {
+                changed = false;
+            }
             StreamWriter sr = new StreamWriter(Main.Path);
 
             sr.WriteLine("Titolo;N°Stagioni;N°Episodi;Genere;Paese;Anno_Pub");
@@ -48,17 +82,6 @@ namespace ColleoniWWF
             sr.Close();
             MessageBox.Show("File Salvato!");
         }
-
-        private void closeButton_Click(object sender, EventArgs e)
-        {
-            Hide();
-            Main m = new Main();
-            m.Show();
-        }
-
-        private void Update_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

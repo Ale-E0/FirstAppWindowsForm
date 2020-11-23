@@ -44,7 +44,6 @@ namespace ColleoniWWF
             this.boxPaese = new System.Windows.Forms.TextBox();
             this.boxAnno = new System.Windows.Forms.TextBox();
             this.confirm = new System.Windows.Forms.Button();
-            this.close = new System.Windows.Forms.Button();
             this.labelConfirm = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -148,16 +147,6 @@ namespace ColleoniWWF
             this.confirm.UseVisualStyleBackColor = true;
             this.confirm.Click += new System.EventHandler(this.confirm_Click);
             // 
-            // close
-            // 
-            this.close.Location = new System.Drawing.Point(671, 391);
-            this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(75, 23);
-            this.close.TabIndex = 13;
-            this.close.Text = "Chiudi";
-            this.close.UseVisualStyleBackColor = true;
-            this.close.Click += new System.EventHandler(this.close_Click);
-            // 
             // labelConfirm
             // 
             this.labelConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
@@ -173,7 +162,6 @@ namespace ColleoniWWF
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.labelConfirm);
-            this.Controls.Add(this.close);
             this.Controls.Add(this.confirm);
             this.Controls.Add(this.boxAnno);
             this.Controls.Add(this.boxPaese);
@@ -190,13 +178,13 @@ namespace ColleoniWWF
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Add";
             this.Text = "Add";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Add_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
         }
 
         private System.Windows.Forms.Label labelConfirm;
 
-        private System.Windows.Forms.Button close;
         private System.Windows.Forms.Button confirm;
 
         private System.Windows.Forms.TextBox boxAnno;

@@ -38,35 +38,35 @@ namespace ColleoniWWF
         {
             if (series.Count == 0)
                 MessageBox.Show("Archivio vuoto o non trovato!", "ColleoniWWF");
-
-            Hide();
+            
             Read r = new Read(series);
             r.Show();
+            Hide();
         }
 
         private void update_Click(object sender, EventArgs e)
         {
-            Hide();
             Update u = new Update(series);
             u.Show();
+            Hide();
         }
         
         private void delete_Click(object sender, EventArgs e)
         {
-            Hide();
             Update d = new Update(series);
             d.Show();
+            Hide();
         }
         private void addButton_Click(object sender, EventArgs e)
         {
-            Hide();
             Add a = new Add();
             a.Show();
+            Hide();
         }
         
         private void exitButton_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
         
         private void Main_Load(object sender, EventArgs e)

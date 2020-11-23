@@ -10,13 +10,6 @@ namespace ColleoniWWF
         {
             InitializeComponent();
         }
-        private void close_Click(object sender, EventArgs e)
-        {
-            Hide();
-            Main main = new Main();
-            main.Show();
-        }
-
         private void confirm_Click(object sender, EventArgs e)
         {
             SerieTV s = new SerieTV
@@ -28,7 +21,6 @@ namespace ColleoniWWF
                 Paese = boxPaese.Text,
                 Anno = boxAnno.Text
             };
-
             labelConfirm.Text = s.Visualizza();
 
             string line = s.Titolo + ";" +
@@ -46,6 +38,12 @@ namespace ColleoniWWF
                     file.WriteLine(line);
                 }
             }
+        }
+
+        private void Add_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Main m = new Main();
+            m.Show();
         }
     }
 }
