@@ -14,20 +14,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b75d4f0-e55f-427b-bfb0-caae4114f10a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/ColleoniWWF.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/ColleoniWWF.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/ColleoniWWF.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/ColleoniWWF.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ColleoniWWF.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ColleoniWWF.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ColleoniWWF.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ColleoniWWF.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Resources.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/Resources.resx" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Resources.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/Settings.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Settings.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/Settings.settings" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/Settings.settings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/ColleoniWWF.exe.config" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/ColleoniWWF.exe.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/videoteca.csv" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/videoteca.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/source/App.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/SerieTV.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/SerieTV.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Videoteca.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/Videoteca.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/form/Add.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/Add.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/form/Add.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/Add.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/form/Add.resx" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/Add.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/form/Main.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/Main.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/form/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/Main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/form/Main.resx" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/Main.resx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/form/Read.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/Read.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/form/Read.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/Read.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/form/Read.resx" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/Read.resx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/form/UpdateDelete.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/UpdateDelete.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/form/UpdateDelete.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/UpdateDelete.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/form/UpdateDelete.resx" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/UpdateDelete.resx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +144,7 @@
       <workItem from="1605816095689" duration="420000" />
       <workItem from="1605907908063" duration="3737000" />
       <workItem from="1606119634229" duration="1218000" />
+      <workItem from="1606131049800" duration="9000" />
     </task>
     <servers />
   </component>

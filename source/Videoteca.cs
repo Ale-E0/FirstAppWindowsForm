@@ -34,13 +34,11 @@ namespace ColleoniWWF
                         Anno = columns[5],
                     });
                 }
-
             }
             catch (FileNotFoundException)
             {
                 MessageBox.Show("File non trovato!", "Errore");
             }
-           
         }
     }
 }

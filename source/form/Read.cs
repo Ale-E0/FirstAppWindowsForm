@@ -15,8 +15,11 @@ namespace ColleoniWWF
             this.serieTV = serieTV;
             InitializeComponent();
             numero = 0;
-            label1.Text = serieTV[numero].Visualizza();
+            label1.Text = serieTV[numero].ToString();
             prevButton.Hide();
+            foreach (SerieTV serie in serieTV)
+                listBox.Items.Add(serie.Titolo);
+            labelList.Text = "";
 
         }
 
@@ -25,7 +28,7 @@ namespace ColleoniWWF
             if (numero != serieTV.Count - 1)
             {
                 numero++;
-                label1.Text = serieTV[numero].Visualizza();
+                label1.Text = serieTV[numero].ToString();
                 prevButton.Show();
             }
 
@@ -38,7 +41,7 @@ namespace ColleoniWWF
             if (numero != 0)
             {
                 numero--;
-                label1.Text = serieTV[numero].Visualizza();
+                label1.Text = serieTV[numero].ToString();
                 nextButton.Show();
             }
 
@@ -55,6 +58,11 @@ namespace ColleoniWWF
         {
             Main m = new Main();
             m.Show();        
+        }
+
+        private void listBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            labelList.Text = serieTV[listBox.SelectedIndex].ToString();
         }
     }
 }

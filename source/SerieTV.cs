@@ -64,7 +64,7 @@ namespace ColleoniWWF
                 }
             }
         }
-        public string Visualizza()
+        public override string ToString()
         {
                     return "Titolo: " + this.Titolo +
                            "\nStagioni: " + this.Stagioni +

@@ -21,7 +21,7 @@ namespace ColleoniWWF
                 Paese = boxPaese.Text,
                 Anno = boxAnno.Text
             };
-            labelConfirm.Text = s.Visualizza();
+            labelConfirm.Text = s.ToString();
 
             string line = s.Titolo + ";" +
                           s.Stagioni + ";" +
