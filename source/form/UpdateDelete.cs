@@ -22,9 +22,10 @@ namespace ColleoniWWF
             dataGridView1.Columns.Add("Genere", "Genere");
             dataGridView1.Columns.Add("Paese", "Paese");
             dataGridView1.Columns.Add("Anno", "Anno");
+            dataGridView1.Columns.Add("Interattiva", "Interattiva");
             changed = false;
             foreach (SerieTV serie in this.serieTV)
-                dataGridView1.Rows.Add(serie.Titolo, serie.Stagioni, serie.Episodi, serie.Genere, serie.Paese, serie.Anno);
+                dataGridView1.Rows.Add(serie.Titolo, serie.Stagioni, serie.Episodi, serie.Genere, serie.Paese, serie.Anno, serie.isInteractive);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -76,18 +77,20 @@ namespace ColleoniWWF
             for(int i = 0; i < dataGridView1.Rows.Count-1; i++)
             {
                 DataGridViewCellCollection cells = dataGridView1.Rows[i].Cells;
-                SerieTV tv = new SerieTV();
-                tv.Titolo = cells[0].Value.ToString();
-                tv.Stagioni = Convert.ToInt32(cells[1].Value);
-                tv.Episodi = Convert.ToInt32(cells[2].Value);
-                tv.Genere = cells[3].Value.ToString();
-                tv.Paese = cells[4].Value.ToString();
-                tv.Anno = cells[5].Value.ToString();
-
+                SerieTV tv = new SerieTV(
+                    cells[0].Value.ToString(),
+                    Convert.ToInt32(cells[1].Value),
+                    Convert.ToInt32(cells[2].Value),
+                    cells[3].Value.ToString(),
+                    cells[4].Value.ToString(),
+                    cells[5].Value.ToString(),
+                        Convert.ToBoolean(cells[6].Value)
+                    );
                 serieTV.Add(tv);
             }
             
-            sr.Write(JsonSerializer.Serialize(serieTV));
+            sr.WriteLine(JsonSerializer.Serialize(serieTV));
+            sr.WriteLine(JsonSerializer.Serialize<List<SerieTvInteractive>>(Main.seriesInteractives));
             sr.Close();
             
             

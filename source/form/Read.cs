@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace ColleoniWWF
@@ -7,33 +8,40 @@ namespace ColleoniWWF
     public partial class Read : Form
     {
 
-        private List<SerieTV> serieTV;
+        private List<SerieTV> _serieTV;
         private static int numero;
 
         public Read(List<SerieTV> serieTV)
         {
-            this.serieTV = serieTV;
+
+            _serieTV = new List<SerieTV>().Concat(serieTV).Concat(Main.seriesInteractives).ToList();
+            
             InitializeComponent();
             
             numero = 0;
             label1.Text = serieTV[numero].ToString();
             prevButton.Hide();
-            foreach (SerieTV serie in serieTV)
+            
+            if(_serieTV.Count == 1)
+                nextButton.Hide();
+
+            foreach (SerieTV serie in _serieTV)
                 listBox.Items.Add(serie.Titolo);
+
             labelList.Text = "";
 
         }
 
         private void nextButton_Click(object sender, EventArgs e)
         {
-            if (numero != serieTV.Count - 1)
+            if (numero != _serieTV.Count - 1)
             {
                 numero++;
-                label1.Text = serieTV[numero].ToString();
+                label1.Text = _serieTV[numero].ToString();
                 prevButton.Show();
             }
 
-            if (numero == serieTV.Count - 1)
+            if (numero == _serieTV.Count - 1)
                 nextButton.Hide();
         }
 
@@ -42,7 +50,7 @@ namespace ColleoniWWF
             if (numero != 0)
             {
                 numero--;
-                label1.Text = serieTV[numero].ToString();
+                label1.Text = _serieTV[numero].ToString();
                 nextButton.Show();
             }
 
@@ -63,7 +71,7 @@ namespace ColleoniWWF
 
         private void listBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            labelList.Text = serieTV[listBox.SelectedIndex].ToString();
+            labelList.Text = _serieTV[listBox.SelectedIndex].ToString();
         }
     }
 }

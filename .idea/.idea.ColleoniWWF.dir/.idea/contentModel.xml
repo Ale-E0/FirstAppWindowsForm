@@ -34,6 +34,7 @@
         </e>
         <e p="Program.cs" t="Include" />
         <e p="SerieTV.cs" t="Include" />
+        <e p="SerieTVInteractive.cs" t="Include" />
         <e p="Videoteca.cs" t="Include" />
       </e>
     </e>

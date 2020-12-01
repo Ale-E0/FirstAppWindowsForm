@@ -10,6 +10,7 @@ namespace ColleoniWWF
     public partial class Main : Form
     {
         private List<SerieTV> series = new List<SerieTV>();
+        public static List<SerieTvInteractive> seriesInteractives = new List<SerieTvInteractive>();
         private Videoteca v = new Videoteca();
         public Main()
         {

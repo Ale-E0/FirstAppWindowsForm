@@ -4,7 +4,20 @@ namespace ColleoniWWF
 {
     public class SerieTV
     {
+        public SerieTV(){}
+        public SerieTV(string titolo, int stagioni, int episodi, string genere, string paese, string anno,
+            bool interattivo)
+        {
+            Titolo = titolo;
+            Stagioni = stagioni;
+            Episodi = episodi;
+            Genere = genere;
+            Paese = paese;
+            Anno = anno;
+            isInteractive = interattivo;
+        }
         private string titolo;
+        
         public string Titolo
         {
             get { return this.titolo; }
@@ -64,14 +77,22 @@ namespace ColleoniWWF
                 }
             }
         }
+
+        private bool _isInteractive ;
+        public bool isInteractive 
+        {
+            get => this._isInteractive;
+            set => _isInteractive = value;
+        }
         public override string ToString()
         {
-                    return "Titolo: " + this.Titolo +
-                           "\nStagioni: " + this.Stagioni +
-                           "\nEpisodi: " + this.Episodi +
-                           "\nGenere: " + this.Genere +
-                           "\nPaese: " + this.Paese +
-                           "\nAnno: " + this.Anno;
+            return "Titolo: " + this.Titolo +
+                   "\nStagioni: " + this.Stagioni +
+                   "\nEpisodi: " + this.Episodi +
+                   "\nGenere: " + this.Genere +
+                   "\nPaese: " + this.Paese +
+                   "\nAnno: " + this.Anno +
+                   "\nInterattiva: " + this.isInteractive;
         }
     }
 }
