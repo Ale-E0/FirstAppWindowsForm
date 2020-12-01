@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq.Expressions;
+using System.Text.Json;
 using System.Windows.Forms;
 
 namespace ColleoniWWF
@@ -10,19 +13,20 @@ namespace ColleoniWWF
         private Videoteca v = new Videoteca();
         public Main()
         {
+
             InitializeComponent();
-            v.LoadDB(series); 
+            v.LoadDB(series);
         }
 
         private bool created;
-        public const string Path = "videoteca.csv";
+        public const string Path = "videoteca.json";
 
         private void create_Click(object sender, EventArgs e)
         {
             var dr = MessageBox.Show("Sicuro di voler creare un nuovo archivio?", "Create", MessageBoxButtons.YesNo);
             if (dr == DialogResult.Yes)
             {
-                created = v.create();
+                created = v.create(series);
                 if (created)
                 {
                     MessageBox.Show("Archivio creato con successo", "ColleoniWWF");
@@ -38,10 +42,12 @@ namespace ColleoniWWF
         {
             if (series.Count == 0)
                 MessageBox.Show("Archivio vuoto o non trovato!", "ColleoniWWF");
-            
-            Read r = new Read(series);
-            r.Show();
-            Hide();
+            else
+            {
+                Read r = new Read(series);
+                r.Show();
+                Hide();
+            }
         }
 
         private void update_Click(object sender, EventArgs e)
@@ -59,7 +65,7 @@ namespace ColleoniWWF
         }
         private void addButton_Click(object sender, EventArgs e)
         {
-            Add a = new Add();
+            Add a = new Add(series);
             a.Show();
             Hide();
         }

@@ -14,6 +14,7 @@ namespace ColleoniWWF
         {
             this.serieTV = serieTV;
             InitializeComponent();
+            
             numero = 0;
             label1.Text = serieTV[numero].ToString();
             prevButton.Hide();

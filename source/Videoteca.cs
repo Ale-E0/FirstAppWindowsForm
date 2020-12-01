@@ -3,37 +3,34 @@ using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace ColleoniWWF
 {
     public class Videoteca
     {
-        public bool create()
+        public bool create(List<SerieTV> series)
         {
-            string text = "Titolo;N°Stagioni;N°Episodi;Genere;Paese;Anno_Pub";
-            File.WriteAllText(Main.Path, text);
+            File.WriteAllText(Main.Path, "[]");
+            series.Clear();
+
             return true;
         }
 
         public void LoadDB(List<SerieTV> series)
         {
+            
             try
             {
-                string[] lines = File.ReadAllLines(Main.Path);
-                lines = lines.Skip(1).ToArray();
-                foreach (string line in lines)
+                StreamReader sr = new StreamReader(Main.Path);
+                string text = sr.ReadLine();
+                foreach (var serieTv in (text != null ? JsonSerializer.Deserialize<List<SerieTV>>(text) : new List<SerieTV>()))
                 {
-                    string[] columns = line.Split(';');
-                    series.Add(new SerieTV()
-                    {
-                        Titolo = columns[0],
-                        Stagioni = Convert.ToInt32(columns[1]),
-                        Episodi = Convert.ToInt32(columns[2]),
-                        Genere = columns[3],
-                        Paese = columns[4],
-                        Anno = columns[5],
-                    });
+                    series.Add(serieTv);
                 }
+                
+                sr.Close();
             }
             catch (FileNotFoundException)
             {
