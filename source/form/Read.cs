@@ -7,10 +7,13 @@ namespace ColleoniWWF
 {
     public partial class Read : Form
     {
-
+        #region Declaration
+        
         private List<SerieTV> _serieTV;
         private static int numero;
-
+        #endregion
+        
+        #region Initialize
         public Read(List<SerieTV> serieTV)
         {
 
@@ -31,7 +34,11 @@ namespace ColleoniWWF
             labelList.Text = "";
 
         }
+        
 
+        #endregion
+        
+        #region Next/Prev Buttons
         private void nextButton_Click(object sender, EventArgs e)
         {
             if (numero != _serieTV.Count - 1)
@@ -44,7 +51,6 @@ namespace ColleoniWWF
             if (numero == _serieTV.Count - 1)
                 nextButton.Hide();
         }
-
         private void prevButton_Click(object sender, EventArgs e)
         {
             if (numero != 0)
@@ -57,21 +63,23 @@ namespace ColleoniWWF
             if (numero == 0)
                 prevButton.Hide();
         }
+        
 
-        private void Read_Load(object sender, EventArgs e)
-        {
+        #endregion
 
-        }
-
+        #region Close Form
         private void Read_FormClosed(object sender, FormClosedEventArgs e)
         {
             Main m = new Main();
             m.Show();        
         }
+        #endregion
 
+        #region ListBox Handler
         private void listBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             labelList.Text = _serieTV[listBox.SelectedIndex].ToString();
         }
+        #endregion
     }
 }

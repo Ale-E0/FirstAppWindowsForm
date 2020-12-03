@@ -1,15 +1,13 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace ColleoniWWF
 {
     public class Videoteca
     {
+        #region Create
         public bool create(List<SerieTV> series)
         {
             File.WriteAllText(Main.Path, "[]\n[]");
@@ -17,7 +15,9 @@ namespace ColleoniWWF
 
             return true;
         }
-
+        #endregion
+        
+        #region Data loader
         public void LoadDB(List<SerieTV> series)
         {
             
@@ -43,5 +43,7 @@ namespace ColleoniWWF
                 MessageBox.Show("File non trovato!", "Errore");
             }
         }
+        #endregion
+        
     }
 }

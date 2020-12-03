@@ -67,7 +67,6 @@ namespace ColleoniWWF
             this.Text = "Update Delete";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Update_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Update_FormClosed);
-            this.Load += new System.EventHandler(this.Update_Load);
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
         }

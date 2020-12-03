@@ -111,7 +111,6 @@ namespace ColleoniWWF
             this.Name = "Read";
             this.Text = "Read";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Read_FormClosed);
-            this.Load += new System.EventHandler(this.Read_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
         }

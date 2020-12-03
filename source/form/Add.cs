@@ -9,13 +9,23 @@ namespace ColleoniWWF
 {
     public partial class Add : Form
     {
+        #region Declaration
+        
         private List<SerieTV> series;
         bool _isInteractive;
+        
+        #endregion
+
+        #region Initialize
         public Add(List<SerieTV> series)
         {
             this.series = new List<SerieTV>().Concat(series).Concat(Main.seriesInteractives).ToList();
             InitializeComponent();
         }
+        
+        #endregion
+
+        #region Adding obj method
         private void confirm_Click(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
@@ -52,10 +62,15 @@ namespace ColleoniWWF
             }
         }
 
+        #endregion
+
+        #region Close Form
         private void Add_FormClosed(object sender, FormClosedEventArgs e)
         {
             Main m = new Main();
             m.Show();
         }
+        
+        #endregion
     }
 }

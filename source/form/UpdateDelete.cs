@@ -8,8 +8,14 @@ namespace ColleoniWWF
 {
     public partial class Update : Form
     {
+        #region Declaration
+        
         private List<SerieTV> serieTV;
         private bool changed;
+        
+        #endregion
+
+        #region Initialize
         public Update(List<SerieTV> serieTV)
         {
             this.serieTV = serieTV;
@@ -32,23 +38,14 @@ namespace ColleoniWWF
         {
 
         }
-
-        private void saveButton_Click(object sender, EventArgs e)
-        {
-            save();
-        }
-
-        private void Update_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        #endregion
+        
+        #region Close Form
         private void Update_FormClosed(object sender, FormClosedEventArgs e)
         {
             Main m = new Main();
             m.Show();
         }
-
         private void Update_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (changed)
@@ -60,11 +57,22 @@ namespace ColleoniWWF
                 }
             }
         }
+        
+        #endregion
+        
+        #region DataGrid 
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             changed = true;
         }
-
+        
+        #endregion
+        
+        #region Save task
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            save();
+        }
         private void save()
         {
             if (changed)
@@ -93,9 +101,8 @@ namespace ColleoniWWF
             sr.WriteLine(JsonSerializer.Serialize<List<SerieTvInteractive>>(Main.seriesInteractives));
             sr.Close();
             
-            
             MessageBox.Show("File Salvato!", "ColleoniWWF");
         }
-        
+        #endregion
     }
 }

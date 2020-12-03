@@ -4,6 +4,7 @@ namespace ColleoniWWF
 {
     public class SerieTV
     {
+        #region Constructors
         public SerieTV(){}
         public SerieTV(string titolo, int stagioni, int episodi, string genere, string paese, string anno,
             bool interattivo)
@@ -16,6 +17,11 @@ namespace ColleoniWWF
             Anno = anno;
             isInteractive = interattivo;
         }
+        
+        #endregion
+
+        #region Attributes
+        
         private string titolo;
         
         public string Titolo
@@ -84,6 +90,10 @@ namespace ColleoniWWF
             get => this._isInteractive;
             set => _isInteractive = value;
         }
+        
+        #endregion
+
+        #region ToString Ovveride
         public override string ToString()
         {
             return "Titolo: " + this.Titolo +
@@ -94,5 +104,7 @@ namespace ColleoniWWF
                    "\nAnno: " + this.Anno +
                    "\nInterattiva: " + this.isInteractive;
         }
+        
+        #endregion
     }
 }
