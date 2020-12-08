@@ -78,6 +78,7 @@ namespace ColleoniWWF
         #region ListBox Handler
         private void listBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if(listBox.SelectedIndex >= 0)
             labelList.Text = _serieTV[listBox.SelectedIndex].ToString();
         }
         #endregion

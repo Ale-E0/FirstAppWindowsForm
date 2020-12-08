@@ -22,21 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f3aeca0-323e-48c3-ad2e-5f65253c6077" name="Default Changelist" comment="Added inherit class">
+    <list default="true" id="0f3aeca0-323e-48c3-ad2e-5f65253c6077" name="Default Changelist" comment="Added regions and small code cleanup">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ColleoniWWF.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/ColleoniWWF.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/ColleoniWWF.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/ColleoniWWF.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/ColleoniWWF.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ColleoniWWF.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/SerieTV.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/SerieTV.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Videoteca.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/Videoteca.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/form/Add.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/Add.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/form/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/Main.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/form/Read.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/Read.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/form/Read.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/Read.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/form/UpdateDelete.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/UpdateDelete.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/form/UpdateDelete.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/form/UpdateDelete.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,15 +46,15 @@
       <list>
         <option value="$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/74DA7839-69EF-4B53-BCDD-CBB5F10FC069/C/ThrowHelper.Serialization.cs" />
         <option value="$PROJECT_DIR$/source/form/Add.Designer.cs" />
-        <option value="$PROJECT_DIR$/source/Videoteca.cs" />
-        <option value="$PROJECT_DIR$/source/form/Main.cs" />
         <option value="$PROJECT_DIR$/source/form/Add.cs" />
         <option value="$PROJECT_DIR$/source/form/Read.Designer.cs" />
         <option value="$PROJECT_DIR$/source/form/Read.cs" />
         <option value="$PROJECT_DIR$/source/form/UpdateDelete.Designer.cs" />
         <option value="$PROJECT_DIR$/source/form/UpdateDelete.cs" />
-        <option value="$PROJECT_DIR$/source/SerieTV.cs" />
         <option value="$PROJECT_DIR$/source/SerieTVInteractive.cs" />
+        <option value="$PROJECT_DIR$/source/Videoteca.cs" />
+        <option value="$PROJECT_DIR$/source/form/Main.cs" />
+        <option value="$PROJECT_DIR$/source/SerieTV.cs" />
       </list>
     </option>
   </component>
@@ -123,7 +111,8 @@
       <workItem from="1606808989939" duration="2910000" />
       <workItem from="1606813982661" duration="11386000" />
       <workItem from="1606909536014" duration="659000" />
-      <workItem from="1606996292866" duration="4296000" />
+      <workItem from="1606996292866" duration="4601000" />
+      <workItem from="1607446957559" duration="2001000" />
     </task>
     <task id="LOCAL-00001" summary="Added something learnt at school">
       <created>1606210851342</created>
@@ -146,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606825431460</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added regions and small code cleanup">
+      <created>1607000793887</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607000793887</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,25 +167,26 @@
     <MESSAGE value="Added something learnt at school" />
     <MESSAGE value="Converted from csv to json" />
     <MESSAGE value="Added inherit class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added inherit class" />
+    <MESSAGE value="Added regions and small code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added regions and small code cleanup" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1607000277408">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1607000898803">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607000277408" />
-    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1607000277408">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607000898803" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1607000898803">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607000277408" />
-    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1607000277408">
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607000898803" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1607000898802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607000277408" />
-    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1607000277408">
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607000898802" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1607000898803">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607000277408" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607000898803" />
     <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1606825765857">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -270,10 +267,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606817291941" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606825438342">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607000810131">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606825438342" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607000810131" />
     <state x="855" y="264" width="644" height="592" key="find.popup" timestamp="1607000264077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
